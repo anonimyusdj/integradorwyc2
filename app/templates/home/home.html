@@ -1,0 +1,139 @@
+{% extends "base.html" %} {% block appbar %} {% include "home/menuHome.html" %} {% endblock %} {% block main %}
+<div class="slider">
+    <ul class="slides">
+        <li>
+            <img class="responsive-img" src="{{ url_for('static',filename='images/eje1.jpg')}}">
+            <!-- random image -->
+            <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan</h5>
+            </div>
+        </li>
+        <li>
+            <img class="responsive-img" src="{{ url_for('static',filename='images/eje2.jpg')}}">
+            <!-- random image -->
+            <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+        <li>
+            <img class="responsive-img" src="{{ url_for('static',filename='images/eje3.jpg')}}">
+            <!-- random image -->
+            <div class="caption right-align">
+                <h3>Right Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<div class="row">
+    <div class="col s12 m12">
+        <div class="row">
+
+            <div class="col s12 m3">
+                <div class="card hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="responsive-img activator" src="{{ url_for('static',filename='images/produc1.png')}}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4" style="font-weight: 500;"><b>Productos</b><i class="material-icons right red-text">new_releases</i></span>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Venta de Productos<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m3">
+                <div class="card hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="responsive-img activator" src="{{ url_for('static',filename='images/crea2.png')}}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4" style="font-weight: 500;"><b>Softwares</b><i class="material-icons right red-text">new_releases</i></span>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Desarrollo de Softwares<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m3">
+                <div class="card hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="responsive-img activator" src="{{ url_for('static',filename='images/soporte.png')}}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4" style="font-weight: 500;"><b>¿Dudas?</b><i class="material-icons right red-text">new_releases</i></span>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Soporte Técnico<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m3">
+                <div class="card hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="responsive-img activator" src="{{ url_for('static',filename='images/acerca.png')}}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4" style="font-weight: 500;"><b>¿Quienes Somos?</b><i class="material-icons right red-text">new_releases</i></span>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Politicas de Seguridad<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <header class="center">
+        <h4 style="font-weight: 500;">Productos de Tendencia</h4>
+    </header>
+    <hr>
+    <div class="col  s12 m12">
+        <div class="carousel carousel-slider center">>
+            <div class="carousel-item red white-text" href="#one!">
+                <h2>First Panel</h2>
+                <p class="white-text">This is your first panel</p>
+            </div>
+            <div class="carousel-item amber white-text" href="#two!">
+                <h2>Second Panel</h2>
+                <p class="white-text">This is your second panel</p>
+            </div>
+            <div class="carousel-item green white-text" href="#three!">
+                <h2>Third Panel</h2>
+                <p class="white-text">This is your third panel</p>
+            </div>
+            <div class="carousel-item blue white-text" href="#four!">
+                <h2>Fourth Panel</h2>
+                <p class="white-text">This is your fourth panel</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
