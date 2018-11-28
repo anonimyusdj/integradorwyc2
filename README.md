@@ -1,5 +1,5 @@
 # integradorwyc2
-1. Install pip first
+1. Install pip first \n
 sudo apt-get install python3-pip
 
 2. Then install virtualenv using pip3
