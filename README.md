@@ -1,4 +1,5 @@
 # INTEGRADOR DE WEB Y COMERCIO 2
+### Necesario tener instalado python
 ### 1. Install pip first
 
     sudo apt-get install python3-pip
